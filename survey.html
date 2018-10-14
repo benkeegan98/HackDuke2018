@@ -41,65 +41,65 @@
   		</br>
   <div class="form-group">
     <strong><label for="surveyQuestion1">Are you in urgent need of mental health services?</label></strong>
-    <select class="form-control" id="surveyQuestion1">
-      <option>Yes, I need care now</option>
-      <option>No, I am looking for more long-term care</option>
+    <select class="form-control" id="surveyQuestion1" name="redirect">
+      <option value="Yes_help">Yes, I need care now</option>
+      <option value="No_help">No, I am looking for more long-term care</option>
     </select>
   </div>
   <div class="form-group">
     <strong><label for="surveyQuestion2">Are you looking for services for <i>yourself</i> or <i>your child?</i></label></stromg>
-    <select class="form-control" id="surveyQuestion2">
-      <option>Pediatric</option>
-      <option>Adults</option>
+    <select class="form-control" id="surveyQuestion2" name="is_child">
+      <option name ="pediatric">Pediatric</option>
+      <option name ="adults">Adults</option>
     </select>
   </div>
   <div class="form-group">
     <label for="surveyQuestion3">Will you need a mental health assessment to determine your course of treatment?</label>
-    <select class="form-control" id="surveyQuestion3">
-      <option>Yes, I need a psychological assessment</option>
-      <option>No, I have already been assessed</option>
+    <select class="form-control" id="surveyQuestion3" name="has_assessment; ">
+      <option name="Yes_assess">Yes, I need a psychological assessment</option>
+      <option name="No_assess">No, I have already been assessed</option>
     </select>
   </div>
   <div class="form-group">
     <label for="surveyQuestion4">Are you seeking psychological (counseling) or psychiatric services (medication)?</label>
-    <select class="form-control" id="surveyQuestion4">
-      <option>Psychological</option>
-      <option>Psychiatric</option>
-      <option>Unsure</option>
+    <select class="form-control" id="surveyQuestion4" name="practicioner_type;">
+      <option name="Pyschological">Psychological</option>
+      <option name="Pyschiatric">Psychiatric</option>
+      <option name="type_all">Unsure</option>
     </select>
   </div>
   <div class="form-group">
     <label for="surveyQuestion5">Will you be seeking in-patient (residential services) or out-patient care?</label>
-    <select class="form-control" id="surveyQuestion5">
-      <option>Residential Services</option>
-      <option>Outpatient</option>
-      <option>Unsure</option>
+    <select class="form-control" id="surveyQuestion5" name="facility_type">
+      <option name="residential">Residential Services</option>
+      <option name="outpatient">Outpatient</option>
+      <option name="care_all">Unsure</option>
     </select>
   </div>
   <div class="form-group">
     <label for="surveyQuestion6">What conditions, if any, are you seeking treatment for?</label>
-    <small id="surveyQuestion6" class="form-text text-muted">Select all that apply (ctrl-click to select multiple)</small>
+    <small id="surveyQuestion6" class="form-text text-muted" name="specialties">Select all that apply (ctrl-click to select multiple)</small>
     <select multiple class="form-control" id="surveyQuestion6">
-      <option>Addiction Treatment</option>
-      <option>Behavioral Disorders</option>
-      <option>Eating Disorders</option>
-      <option>Loss</option>
-      <option>Crisis Services</option>
-      <option>Unsure</option>
+      <option name="addict">Addiction Treatment</option>
+      <option name="behavioral">Behavioral Disorders</option>
+      <option name="eating">Eating Disorders</option>
+      <option name="loss">Loss</option>
+      <option name="crisis">Crisis Services</option>
+      <option name="conditions_all">Unsure</option>
     </select>
   </div>
   <div class="form-group">
     <label for="surveyQuestion7">What counseling services, if any, are you looking for?</label>
-    <select class="form-control" id="surveyQuestion7">
-      <option>Couples</option>
-      <option>Group (family)</option>
-      <option>Walk-In</option>
-      <option>None / Unsure</option>
+    <select class="form-control" id="surveyQuestion7" name="type_of_services">
+      <option name="couples">Couples</option>
+      <option name="group">Group (family)</option>
+      <option name="walkin">Walk-In</option>
+      <option name="service_both">Unsure</option>
     </select>
   </div>
   <div class="form-group">
     <label for="inputHomeAddress">What is your home address?</label>
-    <input type="address" class="form-control" id="InputHomeAddress" placeholder="Street Address, City, State">
+    <input name="addy" type="address" class="form-control" id="InputHomeAddress" placeholder="Street Address, City, State">
   </div>
   <div class="form-group">
     <label for="inputTravelTime">How far are you willing to travel to get to receive treatment?</label>
