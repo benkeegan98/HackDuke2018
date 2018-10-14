@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/benkeegan98/HackDuke2018#readme",
   "dependencies": {
-    "bootstrap": "^4.1.3"
+    "bootstrap": "^4.1.3",
+    "express": "^4.16.4"
   }
 }
