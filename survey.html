@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mental Matchmaker</title>
+		<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+		<link rel="stylesheet" href="site.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+		<style>
+		.hero-image {
+  		  background-image: url("bkg4.png") ;
+  		  background-color: #cccccc;
+  		  height: 1400px;
+  		  background-position: center;
+  		  background-repeat: no-repeat;
+  		  background-size: cover;
+  		  position: relative;
+  		  margin-top: 0;
+		}
+		</style>
+	</head>
+	
+
+	<body>
+		<style>
+      body {
+        font-family: 'Lato', serif;
+        font-size: 20px;
+      }
+      	</style>
+      	<div class="hero-image">
+		<form>
+	<div class="container">
+
+  	<div class="header">
+  		<hr style="height:50pt; visibility:hidden;" />
+  		<center>
+  			<h2><strong> Find My Clinic </strong></h2>
+  		</center>
+  		<hr style="height:1px;border:none;color:#333;background-color:#333;" />
+  		<br>
+  		</br>
+  <div class="form-group">
+    <strong><label for="surveyQuestion1">Are you in urgent need of mental health services?</label></strong>
+    <select class="form-control" id="surveyQuestion1">
+      <option>Yes, I need care now</option>
+      <option>No, I am looking for more long-term care</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <strong><label for="surveyQuestion2">Are you looking for services for <i>yourself</i> or <i>your child?</i></label></stromg>
+    <select class="form-control" id="surveyQuestion2">
+      <option>Pediatric</option>
+      <option>Adults</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="surveyQuestion3">Will you need a mental health assessment to determine your course of treatment?</label>
+    <select class="form-control" id="surveyQuestion3">
+      <option>Yes, I need a psychological assessment</option>
+      <option>No, I have already been assessed</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="surveyQuestion4">Are you seeking psychological (counseling) or psychiatric services (medication)?</label>
+    <select class="form-control" id="surveyQuestion4">
+      <option>Psychological</option>
+      <option>Psychiatric</option>
+      <option>Unsure</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="surveyQuestion5">Will you be seeking in-patient (residential services) or out-patient care?</label>
+    <select class="form-control" id="surveyQuestion5">
+      <option>Residential Services</option>
+      <option>Outpatient</option>
+      <option>Unsure</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="surveyQuestion6">What conditions, if any, are you seeking treatment for?</label>
+    <small id="surveyQuestion6" class="form-text text-muted">Select all that apply (ctrl-click to select multiple)</small>
+    <select multiple class="form-control" id="surveyQuestion6">
+      <option>Addiction Treatment</option>
+      <option>Behavioral Disorders</option>
+      <option>Eating Disorders</option>
+      <option>Loss</option>
+      <option>Crisis Services</option>
+      <option>Unsure</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="surveyQuestion7">What counseling services, if any, are you looking for?</label>
+    <select class="form-control" id="surveyQuestion7">
+      <option>Couples</option>
+      <option>Group (family)</option>
+      <option>Walk-In</option>
+      <option>None / Unsure</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="inputHomeAddress">What is your home address?</label>
+    <input type="address" class="form-control" id="InputHomeAddress" placeholder="Street Address, City, State">
+  </div>
+  <div class="form-group">
+    <label for="inputTravelTime">How far are you willing to travel to get to receive treatment?</label>
+    <input type="number" class="form-control" id="InputHomeAddress" placeholder="Enter travel time in mins">
+  </div>
+  <hr style="height:15pt; visibility:hidden;" />
+  <center><button type="submit" class="btn btn-primary" <a href="./results.html" >Submit</a></button></center>
+  <hr style="height:30pt; visibility:hidden;" />
+</form>
+	</body>
+</html>
